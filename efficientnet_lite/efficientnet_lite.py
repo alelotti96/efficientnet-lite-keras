@@ -17,7 +17,7 @@ if version.parse(tf.__version__) < version.parse("2.12"):
     from tensorflow.python.keras.utils import layer_utils
 else:
     from tensorflow.keras import backend
-    from keras.utils import layer_utils
+    from tensorflow.python.keras.utils import layer_utils
 
 from tensorflow.python.lib.io import file_io
 
