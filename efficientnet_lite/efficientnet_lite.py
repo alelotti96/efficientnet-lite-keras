@@ -9,7 +9,7 @@ from tensorflow.keras import layers
 if version.parse(tf.__version__) < version.parse("2.8"):
     from tensorflow.python.keras.applications import imagenet_utils
 else:
-    from keras_applications import imagenet_utils
+    from keras.src.applications import imagenet_utils
 
 # tensorflow.python.keras is removed in 2.12
 if version.parse(tf.__version__) < version.parse("2.12"):
